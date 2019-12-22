@@ -14,3 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/worksamples', function () {
+    return view('worksamples');
+});
+
+Route::get('worksamples', 'WorkSamplesController@index')->name('worksamples.index');
+
+Route::get('/learning', function () {
+    return view('learning');
+});
